@@ -90,5 +90,5 @@ max_depth = 2
 
 ##### 明天争取到0.8（2022-08-04
 
-
+- [lgb的matrics][https://blog.csdn.net/weixin_43440760/article/details/108843033]
 

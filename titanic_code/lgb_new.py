@@ -88,3 +88,13 @@ submission = pd.DataFrame({'PassengerId':ID, 'Survived':y_pred})
 print(submission.head())
 submission.to_csv('tiantic_submission.csv', index=False)
 
+# # lgb保存模型
+import joblib
+joblib.dump(gbm,'lgb_gbm.pkl')
+lgb = joblib.load('./lgb_gbm.pkl',lgb)
+
+
+import pickle
+with open('lgb.pkl','wb') as f:
+    pickle.dump(gbm,f)
+
